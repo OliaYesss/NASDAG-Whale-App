@@ -8,3 +8,8 @@ const initialState = {
   isHover: false,
   loading: null
 }
+
+const parsePrice = (value) => {
+  return parseFloat(value.replace(/,/g, ''))
+}
+
