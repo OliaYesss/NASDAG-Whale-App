@@ -44,3 +44,4 @@ const nasdaqSlice = createSlice({
   }
 })
 
+export const { addNasdaqData, addNasdaqDataArray, addNasdaqLastDataArray, addCurrNasdaqIndx } = nasdaqSlice.actions
