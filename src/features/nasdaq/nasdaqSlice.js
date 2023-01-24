@@ -47,3 +47,7 @@ const nasdaqSlice = createSlice({
 export const { addNasdaqData, addNasdaqDataArray, addNasdaqLastDataArray, addCurrNasdaqIndx } = nasdaqSlice.actions
 export const nasdaqDataReducer = nasdaqSlice.reducer
 
+export function nasdaqDataSelector(state) {
+  return state.nasdaq.nasdaqData
+}
+
