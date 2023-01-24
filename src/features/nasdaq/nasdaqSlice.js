@@ -51,3 +51,7 @@ export function nasdaqDataSelector(state) {
   return state.nasdaq.nasdaqData
 }
 
+export function nasdaqDataArraySelector(state) {
+  return state.nasdaq.nasdaqDataArray
+}
+
