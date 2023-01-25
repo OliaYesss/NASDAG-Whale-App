@@ -58,3 +58,8 @@ export function nasdaqDataArraySelector(state) {
 export function nasdaqLastDataArraySelector(state) {
   return state.nasdaq.nasdaqLastDataArray
 }
+
+export function nasdaqInitialIndexSelector(state) {
+  return state.nasdaq.nasdaqDataArray.length > 0 ? state.nasdaq.nasdaqDataArray[0].y : 0
+}
+
