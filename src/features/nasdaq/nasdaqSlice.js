@@ -71,3 +71,6 @@ export function currNasdaqIndxSelector(state) {
   return state.nasdaq.currNasdaqIndx
 }
 
+export function isHoverSelector(state) {
+  return state.nasdaq.isHover
+}
