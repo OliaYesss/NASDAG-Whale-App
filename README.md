@@ -16,3 +16,7 @@ $ yarn install
 $ yarn start
 ```
 
+#### How to build a server:
+```bash
+$ yarn start:server
+```
