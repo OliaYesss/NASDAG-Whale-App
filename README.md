@@ -20,3 +20,11 @@ $ yarn start
 ```bash
 $ yarn start:server
 ```
+
+## Technologies
+1. `Redux` - for managing and centralizing application state.
+2. `React` - used for UI in `content script `and `extension settings popup`.
+3. `Visx` - used to build a graphic of weekly usage visualization.
+4. `SocketIO` - enables real-time bidirectional event-based communication.
+5. `Express` - back end web application framework for building RESTful APIs with Node.js.
+6. `MongoDB` - NoSQL database program.
