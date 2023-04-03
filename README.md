@@ -25,3 +25,5 @@ $ yarn start:server
 1. `Redux` - for managing and centralizing application state.
 2. `React` - used for UI in `content script `and `extension settings popup`.
 3. `Visx` - used to build a graphic of weekly usage visualization.
+4. `SocketIO` - enables real-time bidirectional event-based communication.
+
