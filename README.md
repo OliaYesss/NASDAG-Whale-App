@@ -26,4 +26,5 @@ $ yarn start:server
 2. `React` - used for UI in `content script `and `extension settings popup`.
 3. `Visx` - used to build a graphic of weekly usage visualization.
 4. `SocketIO` - enables real-time bidirectional event-based communication.
+5. `Express` - back end web application framework for building RESTful APIs with Node.js.
 
