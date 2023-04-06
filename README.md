@@ -27,4 +27,4 @@ $ yarn start:server
 3. `Visx` - used to build a graphic of weekly usage visualization.
 4. `SocketIO` - enables real-time bidirectional event-based communication.
 5. `Express` - back end web application framework for building RESTful APIs with Node.js.
-
+6. `MongoDB` - NoSQL database program.
