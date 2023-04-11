@@ -6,6 +6,9 @@ import React, { useState } from "react";
 
 
 export const NasdaqApp = () => {
+  const dispatch = useDispatch()
+  const nasdaqData = useSelector(nasdaqDataSelector)
+  const nasdaqInitialIndex = useSelector(nasdaqInitialIndexSelector)
 
   useEffect(() => {
   }, [])
