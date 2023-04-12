@@ -9,6 +9,11 @@ export const NasdaqApp = () => {
   const dispatch = useDispatch()
   const nasdaqData = useSelector(nasdaqDataSelector)
   const nasdaqInitialIndex = useSelector(nasdaqInitialIndexSelector)
+  const currNasdaqIndx = useSelector(currNasdaqIndxSelector)
+  const nasdaqLastIndx = useSelector(nasdaqLastIndxSelector)
+  const isHover = useSelector(isHoverSelector)
+
+
 
   useEffect(() => {
   }, [])
