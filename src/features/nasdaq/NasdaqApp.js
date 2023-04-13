@@ -35,7 +35,7 @@ export const NasdaqApp = () => {
         <div className="nasdaq-diff">{isHover ? currNasdaqDiff : lastNasdaqDiff}({isHover ? currNasdaqPercentageDiff : lastNasdaqPercentageDiff}%)</div>
       </div>
       <div className="graph">
-        
+        <VisxGraph width={500} height={300}/>
       </div>
     </>
   )
