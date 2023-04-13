@@ -16,6 +16,9 @@ export const NasdaqApp = () => {
   const currNasdaqDiff = currNasdaqIndx === 0 ? 0 : (currNasdaqIndx - nasdaqInitialIndex).toFixed(2)
   const lastNasdaqDiff = nasdaqLastIndx === 0 ? 0 : (nasdaqLastIndx - nasdaqInitialIndex).toFixed(2)
 
+  const currNasdaqPercentageDiff = currNasdaqIndx === 0 ? 0 : (currNasdaqDiff * 100 / nasdaqInitialIndex).toFixed(2)
+  const lastNasdaqPercentageDiff = nasdaqLastIndx === 0 ? 0 : (lastNasdaqDiff * 100 / nasdaqInitialIndex).toFixed(2)
+  
 
   useEffect(() => {
   }, [])
