@@ -25,9 +25,9 @@ export const NasdaqApp = () => {
 
   return(
     <>
-      {/* <div>{nasdaqData.lastSalePrice}</div>
+      <div>{nasdaqData.lastSalePrice}</div>
       <div>{nasdaqData.deltaIndicator}</div>
-      <div>{nasdaqData.lastTradeTimestamp}</div> */}
+      <div>{nasdaqData.lastTradeTimestamp}</div>
       <div className="nasdaq-rates">
         <div className="title">NASDAQ</div>
         <div className="subtitle">Composite</div>
