@@ -25,7 +25,18 @@ export const NasdaqApp = () => {
 
   return(
     <>
-
+      {/* <div>{nasdaqData.lastSalePrice}</div>
+      <div>{nasdaqData.deltaIndicator}</div>
+      <div>{nasdaqData.lastTradeTimestamp}</div> */}
+      <div className="nasdaq-rates">
+        <div className="title">NASDAQ</div>
+        <div className="subtitle">Composite</div>
+        <div className="nasdaq-indx">{isHover ? currNasdaqIndx : nasdaqLastIndx}</div>
+        <div className="nasdaq-diff">{isHover ? currNasdaqDiff : lastNasdaqDiff}({isHover ? currNasdaqPercentageDiff : lastNasdaqPercentageDiff}%)</div>
+      </div>
+      <div className="graph">
+        
+      </div>
     </>
   )
 }
