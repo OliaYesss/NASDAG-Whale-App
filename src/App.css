@@ -1,0 +1,162 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.VisxGraph {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.graph {
+  display: flex;
+  justify-content: center;
+}
+
+.nasdaq-rates {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.subtitle, .nasdaq-diff {
+  font-size: large;
+}
+
+.nasdaq-indx {
+  font-size: x-large;
+}
+
+.whale {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #DFC0A1 !important;
+  height: 100vh;
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-screen-wrapper {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 400px;
+  /* border: 2px solid #E58F49; */
+  box-shadow: 0 2px 100px 0 #E58F49;
+}
+
+.sun-img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -85px;
+  left: -47px;
+  animation: linear sunAnimation 10s infinite;
+}
+
+.whale-wave-wrapper {
+  position: absolute;
+  bottom: 0px;
+}
+
+.whale-drops-wrapper {
+  position: relative;
+  animation: linear whaleAnimation 5s infinite;
+}
+
+.drops-sprite-img {
+  position: relative;
+  height: 69px;
+  width: 69.6px;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -35px;
+  background: url('./components/img/drops2x.png');
+  background-size: 430px 69px;
+  background-position: 0px 0px;
+  animation: dropsAnimation 5s steps(6) infinite;
+}
+
+.whale-img {
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  margin-left: 15px;
+}
+
+.wave-img {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: -26px;
+  transform: scale(1.45);
+  animation: linear waveAnimation 5s infinite;
+}
+
+@keyframes dropsAnimation {
+  to { background-position: -430px; }
+}
+
+@keyframes waveAnimation {
+  0%, 50%, 100% {
+    left: 0px;
+  }
+  25% {
+    left: -30px;
+  }
+  75% {
+    left: 30px;
+  }
+}
+
+@keyframes whaleAnimation {
+  0%, 50%, 100% {
+    transform: rotate(0);
+    margin-left: 15px;
+  }
+  25% {
+    transform: rotate(-3deg);
+    margin-left: 0px;
+  }
+  75% {
+    transform: rotate(3deg);
+    margin-left: 30px;
+  }
+}
+
+@keyframes sunAnimation {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .loading-screen-wrapper {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+  }
+
+  .wave-img {
+    top: -20px;
+  }
+}
